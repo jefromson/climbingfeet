@@ -4,7 +4,7 @@ Website for Climbing Feet - Premium climbing gear and calendars for climbers.
 
 ## About
 
-Climbing Feet is your source for premium climbing gear and calendars. We offer the 2026 calendar featuring stunning climbing destinations and routes.
+Climbing Feet is your source for your premium climbing foot fetish! We offer the 2026 calendar featuring stunning climbing feet.
 
 ## GitHub Pages
 
