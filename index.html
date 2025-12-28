@@ -93,6 +93,26 @@
       height: 100%;
       object-fit: contain;
       border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .calendar img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .calendar a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .click-counter {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+      font-style: italic;
     }
 
     .links {
@@ -132,12 +152,37 @@
       <p>Get your 2026 climbing calendar featuring stunning climbing feet for your premium foot fetish!</p>
       
       <div class="calendar">
-        <img src="assets/20251225_climbing_Feet_cover.jpg" alt="2026 Calendar">
+        <a href="not_implemented.html" id="calendar-link">
+          <img src="assets/20251225_climbing_Feet_cover.jpg" alt="2026 Calendar">
+        </a>
       </div>
 
+      <p class="click-counter" id="click-counter">Clicks: 0</p>
       <p style="margin-top: 1rem; font-style: italic;">Now available for purchase!</p>
     </div>
 
   </div>
+
+  <script>
+    // Initialize click counter from localStorage
+    let clickCount = parseInt(localStorage.getItem('calendarClickCount') || '0');
+    const clickCounterElement = document.getElementById('click-counter');
+    const calendarLink = document.getElementById('calendar-link');
+
+    // Update counter display
+    function updateCounter() {
+      clickCounterElement.textContent = `Clicks: ${clickCount}`;
+    }
+
+    // Initialize display
+    updateCounter();
+
+    // Track clicks
+    calendarLink.addEventListener('click', function() {
+      clickCount++;
+      localStorage.setItem('calendarClickCount', clickCount.toString());
+      updateCounter();
+    });
+  </script>
 </body>
 </html>
