@@ -13,9 +13,7 @@ This website is hosted on GitHub Pages. The site is automatically deployed from 
 ## Assets
 
 - `assets/climbing_feet_logo.png` - Logo for Climbing Feet
-- `assets/calendar_2_26.svg` - 2-26 Calendar image (SVG placeholder - replace with actual calendar image)
-
-You can replace the calendar SVG placeholder with PNG, JPG, or other image formats. Just update the file extension in `index.html` accordingly.
+- `assets/20251225_climbing_Feet_cover.jpg` - 2026 Calendar cover image
 
 ## Local Development
 
